@@ -1,0 +1,43 @@
+.hero {
+  color: $white;
+  background-image: linear-gradient(to right, #156315, #1d881d);
+  min-height: 500px;
+  display: flex;
+  align-items: center;
+  .btn {
+    margin-top: 15px;
+    height: 55px;
+  }
+
+  @include media-breakpoint-up(lg) {
+    background-image: url(../../img/banner-principal-gif.gif);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: bottom;
+    min-height: 625px;
+  }
+}
+section:not(.hero) {
+  min-height: 625px;
+  &.small-box {
+    min-height: 450px;
+  }
+
+  .btn {
+    height: 55px;
+  }
+
+  &.small-box-sm {
+    min-height: 530px;
+  }
+  @include media-breakpoint-up(lg) {
+    min-height: 625px;
+    &.small-box {
+      min-height: 500px;
+    }
+    
+  }
+
+  display: flex;
+  align-items: center;
+}

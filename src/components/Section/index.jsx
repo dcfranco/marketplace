@@ -1,0 +1,11 @@
+export { default as Container } from './Container';
+export { default as ContainerFluid } from './ContainerFluid';
+export { default as Title } from './Title';
+export { default as TitleH2 } from './TitleH2';
+export { default as Subtitle } from './Subtitle'; 
+export { default as Mobile } from './Mobile';
+export { default as Desktop } from './Desktop';
+export { default as Button } from './Button';
+export { default as Paragraph } from './Paragraph';
+export { default as Image } from './Image';
+export { default as Wrapper } from './Wrapper';

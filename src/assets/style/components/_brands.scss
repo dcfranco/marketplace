@@ -1,0 +1,130 @@
+
+.logo-integradora {
+    max-width: 80px;
+    max-height: 80px;
+    border: 0px;
+    padding: 0px;
+    margin: auto;
+  }
+
+  .container-brands {
+    overflow: hidden;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    max-width: 1140px;
+  }
+  
+  .content-brands {
+    background: #fff;
+  }
+  
+  .content-brands-div {
+    display: flex;
+    height: 120px;
+    width: 120px;
+    align-items: center;
+    flex-direction: column;
+    margin: 0px 24px;
+
+    .logo {
+      max-height: 80px;
+      min-height: 60px;
+      height: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 10px;
+      img {
+        max-height: 100%;
+        max-width: 100%;
+      }
+    }
+  }
+  
+  .content-brands-div h6 {
+    display: block;
+    font-weight: normal !important;
+    font-size: 14px;
+    width: 120px;
+  }
+  
+  .content-brands-div img {
+    display: flex;
+    /*margin-right: auto;*/
+    /*display: flex;*/
+  }
+
+  .brands {
+    color: #FFB700;
+    background-color: #fff;
+  }
+  
+  .brands a {
+    display: block;
+    text-align: center;
+    padding: 40px 0;
+  }
+  
+  @media (max-width:767px) {
+    .brands a {
+      padding: 60px 0;
+    }
+  }
+  
+  .brands a img {
+    display: inline-block;
+    margin: 20px 20px;
+    vertical-align: middle;
+  }
+  
+  .midiaads {
+    border-radius: 16px 16px 0 0;
+  }
+  
+  .img-border {
+    background-color: #EFEDEE;
+    border: 1px solid white;
+    border-radius: 50%;
+    width: fit-content;
+    margin: 0px auto;
+    overflow: hidden;
+  
+    img {
+      padding: 0px;
+      margin: 15px;
+    }
+
+    &.green {
+      background-color: transparent;
+      border-color: $green;
+
+      img {
+        margin: 0px;
+      }
+    }
+
+    @include media-breakpoint-down(md) {
+      margin-top: 30px;
+
+      img {
+        margin: 5px;
+        max-height: 100px !important;
+      }
+      
+      &.is-row {
+        margin-left: auto;
+        margin-right: 10px;
+        padding: 0px;
+        img {
+          height: 80px;
+        }
+      }
+    }
+  }
+
+  .text-white {
+    a {
+      color: white !important
+    }
+  }

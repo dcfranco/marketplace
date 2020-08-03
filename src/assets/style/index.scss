@@ -1,0 +1,16 @@
+@import "fonts";
+@import "colors";
+
+@import '~bootstrap/scss/functions';
+@import '~bootstrap/scss/mixins';
+@import "default";
+@import '~bootstrap/scss/bootstrap.scss';
+@import '~@fortawesome/fontawesome-free/scss/fontawesome';
+@import '~@fortawesome/fontawesome-free/scss/solid';
+@import "components";
+
+// @import "default/brands.css";
+// @import "default/navigation.css";
+// @import "default/default.css";
+
+@import url(https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css);

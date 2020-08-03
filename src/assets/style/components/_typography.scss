@@ -1,0 +1,69 @@
+@include media-breakpoint-down(sm) {
+  h1,
+  .h1 {
+    @include font-size($h1-font-sm-size, true);
+  }
+  h2,
+  .h2 {
+    @include font-size($h2-font-sm-size, true);
+  }
+  h3,
+  .h3 {
+    @include font-size($h3-font-sm-size, true);
+  }
+  h4,
+  .h4 {
+    @include font-size($h4-font-sm-size, true);
+    line-height: 1.4;
+  }
+  h5,
+  .h5 {
+    @include font-size($h5-font-sm-size, true);
+  }
+  h6,
+  .h6 {
+    @include font-size($h6-font-sm-size, true);
+  }
+  
+  .fa {
+    font-size: $icon-font-sm-size;
+  }
+  p {
+    
+    font-size: $h6-font-sm-size;
+  }
+}
+
+.fa {
+  font-size: $icon-font-size;
+}
+
+@each $breakpoint in map-keys($grid-breakpoints) {
+  @include media-breakpoint-up($breakpoint) {
+    $infix: breakpoint-infix($breakpoint, $grid-breakpoints);
+
+    @each $size, $fontSize in $text-sizes {
+      .font-size#{$infix}-#{$size} { font-size: $fontSize !important; }
+    }
+  }
+}
+
+.text-white-70 {
+  color: rgba(#ffffff, 0.8)
+}
+
+.btn {
+  height: 40px;
+}
+.btn-secondary {
+  color: $primary !important;
+  font-weight: bold !important;
+}
+
+.selectDisable {
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -o-user-select: none;
+  user-select: none;
+}

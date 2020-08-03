@@ -1,0 +1,42 @@
+$primary: #19493D;
+$secondary: #FDBE3D;
+$danger: #f44336;
+$warning: #ff9800;
+$success: #009201;
+$info: #066ba4;
+$black: #000;
+$white: #ffffff;
+$gray: #ccc;
+$dark: #242424;
+$blue-light: #1aa3f1;
+$gray-light: #F0EEEF;
+$green-1: #0e110e;
+$dark2: #5B5B5B;
+$green: #0B2F23;
+
+$theme-colors: (
+  "primary":    $green-1,
+  "secondary":  $secondary,
+  "success":    $success,
+  "info":       $info,
+  "warning":    $warning,
+  "danger":     $danger,
+  "light":      $gray,
+  "dark":       $dark2,
+  "white":      $white,
+  "container":  $gray-light,
+  "green":     $green
+);
+
+$yiq-contrasted-threshold: 200;
+$border-color: $gray;
+$body-color: $primary;
+$font-family-base: 'Poppins';
+
+* {
+  scroll-behavior: smooth;
+  body {
+    font-size: 100%;
+    padding-top: 60px;
+  }
+}

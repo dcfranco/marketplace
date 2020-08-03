@@ -3,13 +3,25 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "@fortawesome/fontawesome-free": "^5.13.1",
     "@testing-library/jest-dom": "^4.2.4",
     "@testing-library/react": "^9.5.0",
     "@testing-library/user-event": "^7.2.1",
+    "aos": "^2.3.4",
+    "bootstrap": "^4.5.0",
+    "node-sass": "^4.14.1",
     "react": "^16.13.1",
+    "react-bootstrap": "^1.2.2",
+    "react-collapse": "^5.0.1",
     "react-dom": "^16.13.1",
-    "react-scripts": "3.4.1"
+    "react-ga": "^3.1.2",
+    "react-gtm-module": "^2.0.10",
+    "react-hotjar": "^2.2.0",
+    "react-multi-carousel": "^2.5.5",
+    "react-scripts": "3.4.1",
+    "svgxuse": "^1.2.6"
   },
+  "homepage": "/marketplace-omnicanal",
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
@@ -30,5 +42,8 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "classnames": "^2.2.6"
   }
 }

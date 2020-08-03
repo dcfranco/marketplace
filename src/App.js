@@ -1,25 +1,30 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import NavBar from './components/NavBar';
+import Section from './sections/Hero';
+import Carrousel from './components/Carrousel';
+import NumbersSection from './sections/Numbers';
+import HowMuch from './sections/HowMuch';
+import WhatYouNeedSection from './sections/WhatYouNeed';
+import MidiaSection from './sections/Midia';
+import CarrouselIntegrated from './components/Carrousel/Integrated';
+import FaqSection from './sections/Faq';
+import Footer from './components/Footer';
+import { MenuProvider } from './context/Menu';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <MenuProvider>
+      <NavBar />
+      <Section />
+      <Carrousel />
+      <NumbersSection />
+      <HowMuch />
+      <WhatYouNeedSection />
+      <MidiaSection />
+      <CarrouselIntegrated />
+      <FaqSection />
+      <Footer />
+    </MenuProvider>
   );
 }
 

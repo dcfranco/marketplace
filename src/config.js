@@ -1,0 +1,1 @@
+export const register_store_url = "https://pas.viavarejo.com.br/cadastro/quero-vender";
